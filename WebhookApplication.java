@@ -1,9 +1,11 @@
-package com.example.webhook.model;
+package com.example.webhook;
 
-import lombok.Data;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-public class WebhookResponse {
-    private String webhook;
-    private String accessToken;
+@SpringBootApplication
+public class WebhookApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(WebhookApplication.class, args);
+    }
 }
